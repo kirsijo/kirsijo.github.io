@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Portfolio Project for HTML and CSS course">
+    <meta name="author" content="Kirsi Jokela" />
     <link rel="stylesheet" href="style.css" />
     <title>Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -13,61 +15,62 @@
       rel="stylesheet"
     />
     <link
+    href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet"
+  />
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300&display=swap"
       rel="stylesheet"
     />
   </head>
   <body>
     <header>
-      <nav class="header">
-        <h1>Kirsi Jokela</h1>
+      <div id="main-nav">
+      <nav class="responsive">
+        <h1 id="my-name">Kirsi Jokela</h1>
+        <button id="mobileButton">
+          <span class="material-icons"> menu </span>
+        </button>
         <ul>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#aboutme">About me</a></li>
           <li><a href="#skills">Skills</a></li>
+          <li><a href="#contactme">Contact me</a></li>
         </ul>
-        <p class="welcome">Welcome to my portfolio</p>
-      </nav>
+      </nav> </div>
+      <p class="welcome">Welcome to my portfolio</p>
     </header>
 
-    <div id="projects">
-      <h2>Projects</h2>
-      <img id="projectimg" src="projects.jpg" />
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti,
-        aliquid reiciendis. Eligendi, repudiandae? Et autem repudiandae maxime
-        eius inventore earum soluta unde cumque quibusdam error doloribus ex
-        animi, iure ducimus. Lorem ipsum dolor sit amet, consectetur adipisicing
-        elit. Ipsum fuga ex rem quis maxime. Eligendi deserunt veniam laborum
-        dignissimos blanditiis incidunt explicabo rem velit accusamus, totam,
-        expedita, possimus pariatur culpa ex non. Labore minima nesciunt
-        corporis provident eos voluptatem numquam dolor laudantium nostrum fugit
-        eaque iste itaque dignissimos, perspiciatis illo inventore sapiente at
-        est, excepturi rem! Est sit deleniti voluptatum id maiores officiis
-        sapiente iste unde beatae autem assumenda animi, blanditiis, aut
-        molestiae ad sed officia placeat? Minus reprehenderit labore culpa sunt
-        voluptatibus odio et animi itaque velit deserunt dolor vitae laborum,
-        magnam voluptate provident dolore, dignissimos tenetur! Minus quia
-        labore dolorum nisi. Accusantium officiis exercitationem molestiae
-        architecto quae nemo quam ea odit harum laudantium possimus esse, culpa
-        repudiandae libero! Autem in molestiae magnam accusantium quo. Sed
-        molestiae voluptas, laudantium ut iste numquam incidunt eligendi, ipsum
-        nihil inventore deserunt est, magni aliquam? Sit eligendi optio minus
-        totam eum doloribus eius velit, corrupti facilis? Consequuntur
-        cupiditate ratione tempora aperiam nobis sed aspernatur sit vitae iste
-        nulla esse error, corrupti ab numquam commodi, ullam blanditiis
-        voluptate nesciunt obcaecati necessitatibus qui velit itaque. Suscipit
-        eveniet autem magnam fugiat animi, nisi excepturi? Sunt maxime iste sit,
-        tempora voluptate magnam praesentium eos dolor vel fuga sed dicta
-        eveniet, similique numquam voluptatum et repellat delectus. Nihil
-        perspiciatis quis totam cum ad praesentium ex, eos sapiente, mollitia,
-        quibusdam sit enim eveniet consequatur accusamus voluptates dolorum sint
-        minus quo doloribus beatae earum.
-      </p>
-    </div>
+   <section> 
+    <h2>Projects</h2>
+     <div id="projects" class="projectcards">
+      <div id="project1">
+        <img src="cookie.jpg" alt="projectimage1">
+        <h3> Project 1</h3>
+        <p>Description here</p>
+        <a href="linkhere">See more</a></div>
+
+        <div id="project2">
+          <img src="cookie.jpg" alt="projectimage2">
+          <h3> Project 2</h3>
+          <p>Description here</p>
+          <a href="linkhere">See more</a> </div>
+
+          <div id="project3">
+            <img src="cookie.jpg">
+            <h3> Project 3</h3>
+            <p>Description here</p>
+            <a href="linkhere">See more</a> 
+        </div>
+          </div>
+
+   </section>
+
+
     <div id="aboutme">
       <h2>About me</h2>
-      <img id="aboutmeimg" src="aboutme.jpg" />
+      <img id="aboutmeimg" src="aboutme.jpg" alt="aboutmeimg"/>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
         exercitationem amet harum earum quisquam molestiae sint perferendis
@@ -76,60 +79,41 @@
         nobis explicabo doloribus consequuntur labore? Voluptatem quibusdam
         deserunt exercitationem reprehenderit earum dolorum? Reprehenderit
         debitis consectetur minus distinctio doloribus ullam atque, sequi
-        deserunt ea veritatis vero labore, officia amet beatae dolores. Tempora
-        doloribus, odit ex quisquam accusantium voluptate recusandae quasi
-        repellendus numquam non natus! Placeat maiores labore accusamus
-        voluptatem, illum voluptas aut suscipit distinctio, provident mollitia
-        nisi perspiciatis necessitatibus vel dolor? Tenetur ratione nostrum
-        officiis! Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-        Fugit excepturi eaque optio? Quidem illum nostrum expedita mollitia
-        nihil alias architecto, maiores repellendus iure harum deleniti qui
-        ipsam dolorem consectetur quasi nemo asperiores, accusantium autem amet!
-        Nihil corrupti alias quo saepe cupiditate, reiciendis assumenda ab nisi
-        necessitatibus ipsam aliquid debitis dolorem similique sequi asperiores
-        doloremque esse facilis quae. Nemo corporis minima assumenda nihil
-        voluptate fugit culpa non quidem totam enim harum, sequi consectetur
-        quibusdam fugiat ducimus ex accusamus temporibus nisi est mollitia.
+        deserunt ea veritatis vero labore, officia amet beatae dolores. 
       </p>
     </div>
-    <div id="skills">
-      <h2>Skills</h2>
-      <img id="skillsimg" src="skills.jpg" />
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat animi
-        quisquam asperiores accusamus, quaerat optio vel suscipit blanditiis,
-        fugit id voluptatibus cum vitae dolores ex rem perspiciatis neque,
-        ratione soluta ad adipisci veniam provident dolorem. Tenetur nesciunt
-        deserunt iste in natus. Suscipit itaque ipsa molestiae quo natus animi!
-        Cupiditate maiores, modi accusamus rem et voluptate debitis facilis
-        incidunt sunt, velit aspernatur molestias dignissimos provident! Ut,
-        minima eius. Error quas eius consequatur ad ea ratione adipisci
-        reprehenderit culpa explicabo iusto fugiat nulla non cum, eaque dolorum
-        consequuntur omnis quibusdam tempore dicta. Suscipit ab aliquam ad nihil
-        vero! Incidunt, deleniti! Deserunt molestias debitis nam corporis id hic
-        assumenda? Accusamus, recusandae nisi quis impedit praesentium cumque
-        ratione aliquam ad obcaecati nostrum provident blanditiis excepturi
-        beatae soluta rerum tenetur! Nesciunt, nobis iste. Eum sint neque
-        suscipit sit accusantium cum sunt totam asperiores, sed eos animi autem
-        illum laudantium vel? Fuga aperiam quae perspiciatis voluptatum iure
-        quas voluptates dignissimos, ea ab facilis minus laudantium, temporibus
-        quos enim modi corrupti dolores. Aspernatur, veniam expedita voluptates
-        error, facere adipisci laboriosam porro cum quod veritatis similique
-        dicta praesentium. Velit aut praesentium vel molestiae iste. Earum
-        laborum ut, ratione vero, nobis assumenda culpa numquam iusto deleniti
-        quis similique ducimus dolores velit iure vel, at dolorem aliquam cum
-        ipsa fuga? Odio id nam deserunt unde quia fugit itaque eaque explicabo
-        mollitia adipisci quam blanditiis odit deleniti nisi voluptate eveniet
-        qui, dolores temporibus tempora ipsum! Debitis, consequuntur,
-        distinctio, tempore expedita laudantium voluptates repudiandae qui quos
-        ullam temporibus autem. Fugit nam maxime nisi doloremque error provident
-        laboriosam iure non, quis ipsa, quam laudantium rem nesciunt eum quaerat
-        et.
-      </p>
+    <h2>Skills</h2>
+    <div id="skills" class="skill-bars">
+      <div id="skill1">
+        <h3>Javascript</h3>
+        <span class="material-icons">
+          javascript
+          </span>
+          <label for="js-progress"></label>
+          <progress id="js-progress" max="100" value="70"> 70% </progress>
+      </div>
+<div id="skill2">
+  <h3>HTML</h3>
+  <span class="material-icons">
+    html
+    </span>
+    <progress id="html-progress" max="100" value="70"> 70% </progress>
+
+</div>
+
+<div id="skill3">
+  <h3>CSS</h3>
+  <span class="material-icons">
+    code
+    </span>
+    <progress id="css-progress" max="100" value="70"> 70% </progress>
+</div>
+    
+    
     </div>
     <footer class="footer">
-      <div class="footerContainer">
-        <div class="contactme">Contact me</div>
+      <div class="footercontainer">
+        <div class="contactme" id="contactme">Contact me</div>
         <div class="container">
           <form>
           <label for="yourname"> Your name </label>
@@ -141,13 +125,17 @@
         </div>
         <div class="yourmessage">
           <label for="yourmessage"> Your message </label>
-          <textarea id="your message" name="yourmessage" rows="5" ></textarea>
+          <textarea id="yourmessage" name="yourmessage" rows="5" ></textarea>
         </div> </form>
-        <button type="sendmessage">Send message</button>
+        <button type="submit">Send message</button>
         <p class="copyright">
-          © Copyright 2022 Kirsi Jokela. All rights reserved.
+          © Copyright 2022 Kirsi Jokela.
         </p>
+        <button id="backToTop">
+          <span class="material-icons"> arrow_upward </span>
+        </button>
       </div>
     </footer>
   </body>
+  <script src="script.js"></script>
 </html>
