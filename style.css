@@ -143,5 +143,75 @@ button {
   height: 40px;
   width: 150px;
   border-radius: 5px;
-  margin-left: 180px;
+}
+
+#skills {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-content: space-around;
+}
+
+#skill1,
+#skill2,
+#skill3 {
+  border: 2px solid;
+  border-color: rgb(186, 197, 207);
+}
+
+progress {
+  display: block;
+  margin: 0px auto 20px auto;
+  height: 2rem;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+progress[value]::-webkit-progress-bar {
+  background-color: #eeee;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+  border-radius: 5px;
+}
+
+progress[value]::-webkit-progress-value {
+  background-image: -webkit-linear-gradient(
+        -45deg,
+        transparent 33%,
+        rgba(172, 210, 218) 33%,
+        rgba(20, 138, 192) transparent 66%
+      ), -webkit-linear-gradient(top, rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.25)),
+    -webkit-linear-gradient(left, #09c, #f44);
+
+  border-radius: 3px;
+}
+
+/* MEDIA QUIRIES */
+
+@media (max-width: 576px) {
+  #mobileButton {
+    display: block;
+    background-color: transparent;
+    border: none;
+    color: rgb(23, 82, 105);
+  }
+  nav ul {
+    display: none;
+  }
+  nav.responsive ul {
+    background-color: white;
+    position: absolute;
+    left: 0;
+    top: 85px;
+    width: 100%;
+    display: block;
+  }
+
+  nav.responsive ul li {
+    display: block;
+  }
+
+  nav.responsive a {
+    display: block;
+  }
 }
