@@ -4,11 +4,12 @@
 }
 
 :root {
-  --color-animation: rgb(227, 208, 247), #fff58d, rgb(23, 82, 105),
-    rgb(224, 155, 207), rgb(143, 187, 190), rgb(201, 151, 77);
+  --color-animation: rgba(214, 186, 245), #f3ec9e, rgb(49, 138, 173),
+    rgba(224, 155, 207), rgba(143, 187, 190), rgba(245, 205, 176),
+    rgba(201, 151, 77);
   --main-font: "Montserrat", sans-serif;
-  --list-link-color: rgba(86, 128, 124, 255);
-  --header-color: rgba(86, 128, 124, 255);
+  --list-link-color: rgba(86, 128, 124);
+  --header-color: rgba(86, 128, 124);
 }
 
 html {
@@ -120,7 +121,7 @@ div .navbar-animation {
   width: 100vw;
   background-image: linear-gradient(65deg, var(--color-animation));
   background-size: 400%, 400%;
-  animation: gradient 17s ease infinite;
+  animation: gradient 19s ease infinite;
 }
 
 /* Note to myself: In CSS, ::before creates a pseudo-element that is the first child of the selected element. It is often used to add cosmetic content to an element with the content property. It is inline by default. */
@@ -159,6 +160,7 @@ h3 {
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-around;
+  margin-bottom: 20px;
 }
 
 #project1,
@@ -207,7 +209,6 @@ p {
 .skill-bars {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row;
   justify-content: space-around;
 }
 
@@ -255,6 +256,10 @@ progress[value]::-webkit-progress-value {
 
 /*FOOTER*/
 
+footer {
+  padding: 10px 0;
+}
+
 footer.footer {
   background-color: black;
 }
@@ -263,10 +268,6 @@ footer.footer {
   display: flex;
   align-items: center;
   flex-direction: column;
-}
-
-footer {
-  padding: 10px 0;
 }
 
 p.copyright {

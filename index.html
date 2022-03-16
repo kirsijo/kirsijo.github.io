@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Portfolio Project for HTML and CSS course">
+    <meta
+      name="description"
+      content="Portfolio Project for HTML and CSS course"
+    />
     <meta name="author" content="Kirsi Jokela" />
     <link rel="stylesheet" href="style.css" />
     <title>Portfolio</title>
@@ -15,124 +18,136 @@
       rel="stylesheet"
     />
     <link
-    href="https://fonts.googleapis.com/icon?family=Material+Icons"
-    rel="stylesheet"
-  />
-  <link rel="icon" type="image/x-icon" href="crystalball.png">
-  <script src="https://kit.fontawesome.com/1edb02e2b2.js" crossorigin="anonymous"></script>
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="crystalball.png" />
+    <script
+      src="https://kit.fontawesome.com/1edb02e2b2.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <main>
-    <header class="main-header">
-      <div id="main-nav">
-      <nav class="responsive">
-        <h1 id="my-name">Kirsi Jokela</h1>
-        <button id="mobileButton">
-          <span class="material-icons"> menu </span>
-        </button>
-        <ul>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#aboutme">About me</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#contactme">Contact me</a></li>
-          <li><a href="gallery.html">Gallery</a></li>
-        </ul>
-      </nav> <div class="navbar-animation">::before</div></div>
-      
-     <div id="welcome-div"> <p class="welcome">Welcome to my portfolio</p></div>
-    </header>
+      <header class="main-header">
+        <div id="main-nav">
+          <nav class="responsive">
+            <h1 id="my-name"><a href="index.html"> Kirsi Jokela</a></h1>
+            <button id="mobileButton">
+              <span class="material-icons"> menu </span>
+            </button>
+            <ul>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#aboutme">About me</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#contactme">Contact me</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+          </nav>
+          <div class="navbar-animation">::before</div>
+        </div>
 
-   <section id="projects"> 
-    <h2>Projects</h2>
-    <div class="projectcards">
-    
-      <div id="project1">
-        <img class="project-image" src="cookie.jpg" alt="projectimage1">
-        <h3> Project 1</h3>
-        <p>HTML, CSS, JS</p>
-        <a class="project-link" href="linkhere">See more</a></div>
+        <div id="welcome-div">
+          <p class="welcome">Welcome to my portfolio</p>
+        </div>
+      </header>
 
-        <div id="project2">
-          <img src="cookie.jpg" alt="projectimage2">
-          <h3> Project 2</h3>
-          <p>HTML, CSS, JS</p>
-          <a class="project-link" href="linkhere">See more</a> </div>
+      <section id="projects">
+        <h2>Projects</h2>
+        <div class="projectcards">
+          <div id="project1">
+            <img class="project-image" src="cookie.jpg" alt="projectimage1" />
+            <h3>Project 1</h3>
+            <p><em>HTML, CSS, JS</em></p>
+            <a class="project-link" href="linkhere">See more</a>
+          </div>
+
+          <div id="project2">
+            <img src="cookie.jpg" alt="projectimage2" />
+            <h3>Project 2</h3>
+            <p><em>HTML, CSS, JS</em></p>
+            <a class="project-link" href="linkhere">See more</a>
+          </div>
 
           <div id="project3">
-            <img src="cookie.jpg">
-            <h3> Project 3</h3>
-            <p>HTML, CSS, JS</p>
-            <a class="project-link" href="linkhere">See more</a> 
-      </div>
+            <img src="cookie.jpg" alt="projectimage3" />
+            <h3>Project 3</h3>
+            <p><em>HTML, CSS, JS</em></p>
+            <a class="project-link" href="linkhere">See more</a>
+          </div>
         </div>
-  </section>
+      </section>
 
-<section id="aboutme">
-    <div>
-      <h2>About me</h2>
-      <img id="aboutmeimg" src="aboutme.jpg" alt="aboutmeimg"/>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
-        exercitationem amet harum earum quisquam molestiae sint perferendis
-        voluptate. Pariatur sit, doloremque totam quos quibusdam sint labore,
-        ipsum soluta natus fuga nobis facere deserunt reiciendis. Dolore nisi
-        nobis explicabo doloribus consequuntur labore? Voluptatem quibusdam
-        deserunt exercitationem reprehenderit earum dolorum? Reprehenderit
-        debitis consectetur minus distinctio doloribus ullam atque, sequi
-        deserunt ea veritatis vero labore, officia amet beatae dolores. 
-      </p>
-    </div>
-</section>
-
-<section id="skills">
-    <h2>Skills</h2>
-    <div class="skill-bars">
-      <div id="skill1">
-        <h3>Javascript</h3>
-        <span><i class="fa-brands fa-js"></i></span>
-          <label for="js-progress"></label>
-          <progress id="js-progress" max="100" value="50"> 50% </progress>
-    </div>
-<div id="skill2">
-  <h3>HTML</h3>
-  <span> <i class="fa-brands fa-html5"></i></span>
-    <progress id="html-progress" max="100" value="50"> 50% </progress>
-</div>
-
-<div id="skill3">
-  <h3>CSS</h3>
-  <span> <i class="fa-brands fa-css3-alt"></i>
-    </span>
-    <progress id="css-progress" max="100" value="50"> 50% </progress>
-</div>
-</section>
-  </div>
-    <footer class="footer">
-      <div class="footercontainer">
-        <div class="contactme" id="contactme">Contact me</div>
-        <div class="container">
-          <form>
-          <label for="yourname"> Your name </label>
-          <input type="text" name="yourname" required />
+      <section id="aboutme">
+        <div>
+          <h2>About me</h2>
+          <img id="aboutmeimg" src="aboutme.jpg" alt="aboutmeimg" />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
+            exercitationem amet harum earum quisquam molestiae sint perferendis
+            voluptate. Pariatur sit, doloremque totam quos quibusdam sint
+            labore, ipsum soluta natus fuga nobis facere deserunt reiciendis.
+            Dolore nisi nobis explicabo doloribus consequuntur labore?
+            Voluptatem quibusdam deserunt exercitationem reprehenderit earum
+            dolorum? Reprehenderit debitis consectetur minus distinctio
+            doloribus ullam atque, sequi deserunt ea veritatis vero labore,
+            officia amet beatae dolores.
+          </p>
         </div>
-        <div class="youremail">
-          <label for="youremail"> Your email </label>
-          <input type="text" name="youremail" required />
+      </section>
+
+      <section id="skills">
+        <h2>Skills</h2>
+        <div class="skill-bars">
+          <div id="skill1">
+            <h3>Javascript</h3>
+            <span><i class="fa-brands fa-js"></i></span>
+            <label for="js-progress"></label>
+            <progress id="js-progress" max="100" value="50">50%</progress>
+          </div>
+          <div id="skill2">
+            <h3>HTML</h3>
+            <span> <i class="fa-brands fa-html5"></i></span>
+            <progress id="html-progress" max="100" value="50">50%</progress>
+          </div>
+
+          <div id="skill3">
+            <h3>CSS</h3>
+            <span> <i class="fa-brands fa-css3-alt"></i> </span>
+            <progress id="css-progress" max="100" value="50">50%</progress>
+          </div>
         </div>
-        <div class="yourmessage">
-          <label for="yourmessage"> Your message </label>
-          <textarea id="yourmessage" name="yourmessage" rows="5" ></textarea>
-        </div> </form>
-        <button type="submit" id="contact-button">Send message</button>
-        <p class="copyright">
-          © Copyright 2022 Kirsi Jokela.
-        </p>
-        <button id="backToTop">
-          <span class="material-icons"> arrow_upward </span>
-        </button>
-      </div>
-    </footer>
+      </section>
+
+      <footer class="footer">
+        <div class="footercontainer">
+          <div class="contactme" id="contactme">Contact me</div>
+          <div class="container">
+            <form>
+              <label for="yourname"> Your name</label>
+              <input id="yourname" type="text" required />
+              <div class="youremail">
+                <label for="youremail"> Your email </label>
+                <input id="youremail" type="text" name="youremail" required />
+              </div>
+              <div class="yourmessage">
+                <label for="yourmessage"> Your message </label>
+                <textarea
+                  id="yourmessage"
+                  name="yourmessage"
+                  rows="5"
+                ></textarea>
+              </div>
+            </form>
+          </div>
+          <button type="submit" id="contact-button">Send message</button>
+          <p class="copyright">© Copyright 2022 Kirsi Jokela.</p>
+          <button id="backToTop">
+            <span class="material-icons"> arrow_upward </span>
+          </button>
+        </div>
+      </footer>
+    </main>
+    <script src="script.js"></script>
   </body>
-</main>
-  <script src="script.js"></script>
 </html>
