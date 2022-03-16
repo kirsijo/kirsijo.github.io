@@ -1,11 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+
 * {
   margin: 0;
   padding: 0;
 }
 
 :root {
-  --color-animation: rgba(214, 186, 245), #f3ec9e, rgb(49, 138, 173),
-    rgba(224, 155, 207), rgba(143, 187, 190), rgba(245, 205, 176),
+  --color-animation: rgba(245, 205, 176), rgba(214, 186, 245),
+    rgba(243, 236, 156), rgb(49, 138, 173), rgba(143, 187, 190),
+    rgba(214, 186, 245), rgba(224, 155, 207), rgba(245, 205, 176),
     rgba(201, 151, 77);
   --main-font: "Montserrat", sans-serif;
   --list-link-color: rgba(86, 128, 124);
@@ -89,10 +92,12 @@ nav {
 }
 
 .welcome {
-  font-size: 2rem;
-  font-family: var(--main-font);
+  font-size: 3rem;
+  color: rgb(38, 107, 134);
+  font-family: "Pacifico", cursive;
   text-align: center;
   margin-top: 2.5rem;
+  text-shadow: 1px 1px rgb(185, 182, 182);
 }
 
 h1 {
@@ -196,6 +201,7 @@ h3 {
 #aboutme {
   background-color: rgb(229, 237, 243);
   display: inline-block;
+  padding-bottom: 20px;
 }
 
 p {
@@ -210,6 +216,7 @@ p {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  margin-bottom: 20px;
 }
 
 #skill1,
@@ -233,6 +240,8 @@ progress {
   appearance: none;
   margin: 20px;
 }
+
+/* CSS validator will return a warning about the webkit as a vendor extended pseudo-element. I have tested the styling and it does not work without them in. */
 
 progress::-webkit-progress-bar {
   background-color: #eeee;
@@ -371,12 +380,10 @@ button {
   }
 
   #mobileButton {
-    display: flex;
-    align-self: flex-end;
+    display: inline-block;
     background-color: transparent;
     border: none;
-    margin: auto;
-    width: 0;
+    width: 30px;
     color: rgb(23, 82, 105);
   }
 
@@ -414,5 +421,12 @@ button {
   }
   section {
     scroll-margin-top: 87px;
+  }
+  .welcome {
+    font-size: 1.8rem;
+  }
+
+  .main-header {
+    background-position: top;
   }
 }
