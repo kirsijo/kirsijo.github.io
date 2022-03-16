@@ -11,10 +11,10 @@ window.onscroll = function () {
 
 const scrollFunction = () => {
   if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
-    header.classList.add("bg");
+    header.classList.add("bg-green");
     button.style.display = "block";
   } else {
-    header.classList.remove("bg");
+    header.classList.remove("bg-green");
     button.style.display = "none";
   }
 };

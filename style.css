@@ -106,7 +106,7 @@ h1 {
   font-weight: 400;
 }
 
-.bg #main-nav {
+.bg-green #main-nav {
   background-color: rgb(229, 243, 237);
   transition: 1.3s;
 }
@@ -179,7 +179,7 @@ h3 {
 }
 
 .projectcards img {
-  height: 200px;
+  max-width: 300px;
   margin-bottom: 20px;
   box-shadow: rgba(0, 0, 0, 0.3) 12px 19px 38px,
     rgba(0, 0, 0, 0.22) 0px 10px 8px;
@@ -195,7 +195,7 @@ h3 {
 #aboutmeimg {
   padding: 1rem;
   float: left;
-  height: 200px;
+  width: 270px;
 }
 
 #aboutme {
@@ -351,7 +351,7 @@ button {
   display: grid;
   gap: 0.5rem;
   grid-template-columns: 250px 150px 350px;
-  grid-template-rows: 150px 175px 150px;
+  grid-template-rows: 2fr 150px;
   justify-content: center;
 }
 
