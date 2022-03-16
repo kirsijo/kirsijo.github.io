@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Gallery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+    href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet"
+  />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👩‍💻</text></svg>">
+  <script src="https://kit.fontawesome.com/1edb02e2b2.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header>
+      <div id="main-nav">
+        <nav class="responsive">
+          <h1 id="my-name"><a href="index.html">Kirsi Jokela</h1></a>
+          <button id="mobileButton">
+            <span class="material-icons"> menu </span>
+          </button>
+          <ul>
+            <li><a href="index.html#projects">Projects</a></li>
+            <li><a href="index.html#aboutme">About me</a></li>
+            <li><a href="index.html#skills">Skills</a></li>
+            <li><a href="index.html#contactme">Contact me</a></li>
+            <li><a href="index.html">Back to Homepage</a></li>
+          </ul>
+        </nav>
+        <div class="navbar-animation">::before</div>
+      </div>
+    </header>
+    <section>
+      <h2 id="gallery-welcome">Gallery</h2>
+      <div class="grid-container">
+        <div><img class="gallery-image" id="ice" src="/Images/ice.jpg" /></div>
+        <div>
+          <img class="gallery-image" id="random" src="/Images/random.jpg" />
+        </div>
+        <div><img class="gallery-image" id="road" src="/Images/road.jpg" /></div>
+        <div>
+          <img class="gallery-image" id="moreice" src="/Images/moreice.jpg" />
+        </div>
+
+        <img
+          class="gallery-image"
+          id="cloudberryflower"
+          src="Images/cloudberryflower.jpg"
+        />
+
+        <img class="gallery-image" id="code" src="Images/code.jpg" />
+        <img class="gallery-image" id="cloud" src="Images/cloud.jpg" />
+        <img class="gallery-image" id="flights" src="Images/flights.jpg" />
+        <img class="gallery-image" id="coffee" src="Images/coffee.jpg" />
+      </div>
+      <p id="image-credit">Images from <a href="https://source.unsplash.com/">Unsplash</a></p>
+    </section>
+    <footer class="footer">
+      <div class="footercontainer">
+        <div class="contactme" id="contactme">Contact me</div>
+        <div class="container">
+          <form>
+          <label for="yourname"> Your name </label>
+          <input type="text" name="yourname" required />
+        </div>
+        <div class="youremail">
+          <label for="youremail"> Your email </label>
+          <input type="text" name="youremail" required />
+        </div>
+        <div class="yourmessage">
+          <label for="yourmessage"> Your message </label>
+          <textarea id="yourmessage" name="yourmessage" rows="5" ></textarea>
+        </div> </form>
+        <button type="submit" id="contact-button">Send message</button>
+        <p class="copyright">
+          © Copyright 2022 Kirsi Jokela.
+        </p>
+        <button id="backToTop">
+          <span class="material-icons"> arrow_upward </span>
+        </button>
+      </div>
+    </footer>
+  </body>
+  <script src="script.js"></script>
+  </body>
+</html>

@@ -3,6 +3,14 @@
   padding: 0;
 }
 
+:root {
+  --color-animation: rgb(227, 208, 247), #fff58d, rgb(23, 82, 105),
+    rgb(224, 155, 207), rgb(143, 187, 190), rgb(201, 151, 77);
+  --main-font: "Montserrat", sans-serif;
+  --list-link-color: rgba(86, 128, 124, 255);
+  --header-color: rgba(86, 128, 124, 255);
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -11,9 +19,45 @@ body {
   background-color: rgb(245, 243, 247);
 }
 
+/* LINKS */
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: var(--list-link-color);
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/*INTERNAL LINK SCROLLING*/
+
+section {
+  scroll-margin-top: 90px;
+}
+
+/*LIST*/
+
+ul {
+  padding: 0;
+}
+
+li {
+  font-family: var(--main-font);
+  display: inline;
+  padding: 5px;
+}
+
+li a {
+  color: var(--list-link-color);
+}
+
 /* HEADER*/
 
-header {
+.main-header {
   padding-top: 3vh;
   padding-bottom: 30vh;
   background-image: url(lehtinen.jpg);
@@ -27,6 +71,7 @@ nav {
   flex-direction: row;
   justify-content: flex-end;
   justify-content: space-between;
+  margin: 1.5rem;
 }
 
 #main-nav {
@@ -35,6 +80,7 @@ nav {
   right: 0;
   top: 0;
   background-color: #ffff;
+  z-index: 300;
 }
 
 #mobileButton {
@@ -43,63 +89,66 @@ nav {
 
 .welcome {
   font-size: 2rem;
-  font-family: "Montserrat", sans-serif;
+  font-family: var(--main-font);
   text-align: center;
+  margin-top: 2.5rem;
 }
 
 h1 {
-  color: rgb(23, 82, 105);
-  font-family: "Montserrat", sans-serif;
+  color: var(--header-color);
+  font-family: var(--main-font);
   font-weight: 400;
 }
 
-.bg {
-  background-color: white;
+.bg #main-nav {
+  background-color: rgb(229, 243, 237);
+  transition: 1.3s;
 }
 
-.bg a,
-.bg span {
-  color: #333;
+/* HEADER ANIMATION */
+
+div .navbar-animation {
+  height: 5px;
+  position: relative;
+  overflow: hidden;
 }
 
-/* LINKS */
-
-a {
-  text-decoration: none;
+.navbar-animation::before {
+  content: " ";
+  position: absolute;
+  height: 100%;
+  width: 100vw;
+  background-image: linear-gradient(65deg, var(--color-animation));
+  background-size: 400%, 400%;
+  animation: gradient 17s ease infinite;
 }
 
-a:hover {
-  text-decoration: underline;
-}
+/* Note to myself: In CSS, ::before creates a pseudo-element that is the first child of the selected element. It is often used to add cosmetic content to an element with the content property. It is inline by default. */
 
-/*LIST*/
-
-ul {
-  padding: 0;
-}
-
-li {
-  font-family: "Montserrat", sans-serif;
-  display: inline;
-  padding: 5px;
-}
-
-li a {
-  color: rgba(86, 128, 124, 255);
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 /*HEADINGS*/
 
 h2 {
-  color: rgba(86, 128, 124, 255);
-  font-family: "Montserrat", sans-serif;
+  color: var(--header-color);
+  font-family: var(--main-font);
   font-weight: 500;
   margin: 20px;
 }
 
 h3 {
-  color: rgba(86, 128, 124, 255);
-  font-family: "Montserrat", sans-serif;
+  color: var(--header-color);
+  font-family: var(--main-font);
   font-weight: 300;
 }
 
@@ -124,6 +173,14 @@ h3 {
 
 .projectcards img {
   height: 200px;
+  margin-bottom: 20px;
+  box-shadow: rgba(0, 0, 0, 0.3) 12px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 10px 8px;
+}
+
+.project-link {
+  color: var(--list-link-color);
+  font-family: var(--main-font);
 }
 
 /*ABOUT ME SECTION*/
@@ -131,6 +188,7 @@ h3 {
 #aboutmeimg {
   padding: 1rem;
   float: left;
+  height: 200px;
 }
 
 #aboutme {
@@ -139,14 +197,14 @@ h3 {
 }
 
 p {
-  font-family: "Montserrat", sans-serif;
+  font-family: var(--main-font);
   font-size: 1em;
   padding: 1em;
 }
 
 /*SKILLS SECTION */
 
-#skills {
+.skill-bars {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -163,17 +221,19 @@ p {
   padding: 1em;
 }
 
+.fa-brands {
+  font-size: 2.5rem;
+}
+
 progress {
   display: block;
   margin: 0px auto 20px auto;
   height: 2rem;
-  -webkit-appearance: none;
-  -moz-appearance: none;
   appearance: none;
   margin: 20px;
 }
 
-progress[value]::-webkit-progress-bar {
+progress::-webkit-progress-bar {
   background-color: #eeee;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
   border-radius: 5px;
@@ -218,23 +278,24 @@ p.copyright {
 
 .contactme {
   color: #f5e0cc;
-  font-family: "Montserrat", sans-serif;
+  font-family: var(--main-font);
   font-size: 20px;
   margin-top: 20px;
 }
 
 #backToTop {
-  width: 45px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   position: fixed;
   bottom: 1rem;
-  right: 4rem;
+  right: 2.5rem;
   cursor: pointer;
 }
 
 label {
   color: #f5e0cc;
-  font-family: "Montserrat", sans-serif;
+  font-family: var(--main-font);
   display: block;
   margin: 10px;
 }
@@ -250,33 +311,83 @@ textarea {
 
 button {
   background-color: #f5e0cc;
-  font-family: "Montserrat", sans-serif;
+  font-family: var(--main-font);
   font-size: 1em;
   color: black;
   border: none;
+}
+
+#contact-button {
   height: 40px;
   width: 150px;
   border-radius: 5px;
+  margin: 1.5rem;
 }
 
-/* MEDIA QUIRIES */
+#contact-button:hover {
+  cursor: pointer;
+}
+
+/*GALLERY PAGE*/
+
+#gallery-welcome {
+  margin-top: 8rem;
+  margin-bottom: 8rem;
+  text-align: center;
+}
+
+.grid-container {
+  margin-bottom: 8rem;
+  display: grid;
+  gap: 0.5rem;
+  grid-template-columns: 250px 150px 350px;
+  grid-template-rows: 150px 175px 150px;
+  justify-content: center;
+}
+
+.grid-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: grayscale(80%);
+}
+
+.grid-container img:hover {
+  cursor: pointer;
+  filter: saturate(1);
+  transform: 0.5s;
+}
+
+#image-credit {
+  color: var(--list-link-color);
+}
+
+/* MEDIA QUERIES */
 
 @media (max-width: 576px) {
-  #mobileButton {
+  #myname {
     display: block;
+  }
+
+  #mobileButton {
+    display: flex;
+    align-self: flex-end;
     background-color: transparent;
     border: none;
+    margin: auto;
+    width: 0;
     color: rgb(23, 82, 105);
-    padding: 0.5rem;
   }
+
   nav ul {
     display: none;
   }
+
   nav.responsive ul {
     background-color: white;
     position: absolute;
     left: 0;
-    top: 40px;
+    top: 82px;
     width: 100%;
     display: block;
   }
@@ -295,5 +406,12 @@ button {
     float: none;
     width: 100%;
     padding: 0;
+  }
+
+  .grid-container {
+    display: block;
+  }
+  section {
+    scroll-margin-top: 87px;
   }
 }

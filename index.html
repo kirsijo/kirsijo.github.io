@@ -18,14 +18,12 @@
     href="https://fonts.googleapis.com/icon?family=Material+Icons"
     rel="stylesheet"
   />
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👩‍💻</text></svg>">
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300&display=swap"
-      rel="stylesheet"
-    />
+  <link rel="icon" type="image/x-icon" href="crystalball.png">
+  <script src="https://kit.fontawesome.com/1edb02e2b2.js" crossorigin="anonymous"></script>
   </head>
   <body>
-    <header>
+    <main>
+    <header class="main-header">
       <div id="main-nav">
       <nav class="responsive">
         <h1 id="my-name">Kirsi Jokela</h1>
@@ -37,38 +35,40 @@
           <li><a href="#aboutme">About me</a></li>
           <li><a href="#skills">Skills</a></li>
           <li><a href="#contactme">Contact me</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
         </ul>
-      </nav> </div>
-      <p class="welcome">Welcome to my portfolio</p>
+      </nav> <div class="navbar-animation">::before</div></div>
+      
+     <div id="welcome-div"> <p class="welcome">Welcome to my portfolio</p></div>
     </header>
 
-   <section> 
+   <section id="projects"> 
     <h2>Projects</h2>
-     <div id="projects" class="projectcards">
+    <div class="projectcards">
+    
       <div id="project1">
-        <img src="cookie.jpg" alt="projectimage1">
+        <img class="project-image" src="cookie.jpg" alt="projectimage1">
         <h3> Project 1</h3>
-        <p>Description here</p>
-        <a href="linkhere">See more</a></div>
+        <p>HTML, CSS, JS</p>
+        <a class="project-link" href="linkhere">See more</a></div>
 
         <div id="project2">
           <img src="cookie.jpg" alt="projectimage2">
           <h3> Project 2</h3>
-          <p>Description here</p>
-          <a href="linkhere">See more</a> </div>
+          <p>HTML, CSS, JS</p>
+          <a class="project-link" href="linkhere">See more</a> </div>
 
           <div id="project3">
             <img src="cookie.jpg">
             <h3> Project 3</h3>
-            <p>Description here</p>
-            <a href="linkhere">See more</a> 
+            <p>HTML, CSS, JS</p>
+            <a class="project-link" href="linkhere">See more</a> 
+      </div>
         </div>
-          </div>
+  </section>
 
-   </section>
-
-
-    <div id="aboutme">
+<section id="aboutme">
+    <div>
       <h2>About me</h2>
       <img id="aboutmeimg" src="aboutme.jpg" alt="aboutmeimg"/>
       <p>
@@ -82,35 +82,31 @@
         deserunt ea veritatis vero labore, officia amet beatae dolores. 
       </p>
     </div>
+</section>
+
+<section id="skills">
     <h2>Skills</h2>
-    <div id="skills" class="skill-bars">
+    <div class="skill-bars">
       <div id="skill1">
         <h3>Javascript</h3>
-        <span class="material-icons">
-          javascript
-          </span>
+        <span><i class="fa-brands fa-js"></i></span>
           <label for="js-progress"></label>
-          <progress id="js-progress" max="100" value="70"> 70% </progress>
-      </div>
+          <progress id="js-progress" max="100" value="50"> 50% </progress>
+    </div>
 <div id="skill2">
   <h3>HTML</h3>
-  <span class="material-icons">
-    html
-    </span>
-    <progress id="html-progress" max="100" value="70"> 70% </progress>
-
+  <span> <i class="fa-brands fa-html5"></i></span>
+    <progress id="html-progress" max="100" value="50"> 50% </progress>
 </div>
 
 <div id="skill3">
   <h3>CSS</h3>
-  <span class="material-icons">
-    code
+  <span> <i class="fa-brands fa-css3-alt"></i>
     </span>
-    <progress id="css-progress" max="100" value="70"> 70% </progress>
+    <progress id="css-progress" max="100" value="50"> 50% </progress>
 </div>
-    
-    
-    </div>
+</section>
+  </div>
     <footer class="footer">
       <div class="footercontainer">
         <div class="contactme" id="contactme">Contact me</div>
@@ -127,7 +123,7 @@
           <label for="yourmessage"> Your message </label>
           <textarea id="yourmessage" name="yourmessage" rows="5" ></textarea>
         </div> </form>
-        <button type="submit">Send message</button>
+        <button type="submit" id="contact-button">Send message</button>
         <p class="copyright">
           © Copyright 2022 Kirsi Jokela.
         </p>
@@ -137,5 +133,6 @@
       </div>
     </footer>
   </body>
+</main>
   <script src="script.js"></script>
 </html>
