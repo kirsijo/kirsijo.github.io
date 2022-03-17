@@ -319,6 +319,10 @@ textarea {
   border-width: 1px;
 }
 
+input {
+  padding: 5px;
+}
+
 button {
   background-color: #f5e0cc;
   font-family: var(--main-font);
