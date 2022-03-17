@@ -32,7 +32,6 @@ const mobMenu = () => {
     nav.classList.remove("responsive");
   } else {
     nav.classList.add("responsive");
-    console.log("responsive added");
   }
 };
 

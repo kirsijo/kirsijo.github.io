@@ -68,21 +68,24 @@
         <div class="contactme" id="contactme">Contact me</div>
         <div class="container">
           <form>
-          <label for="yourname"> Your name </label>
-          <input type="text" name="yourname" required />
+            <label for="yourname"> Your name</label>
+            <input id="yourname" type="text" required />
+            <div class="youremail">
+              <label for="youremail"> Your email </label>
+              <input id="youremail" type="text" name="youremail" required />
+            </div>
+            <div class="yourmessage">
+              <label for="yourmessage"> Your message </label>
+              <textarea
+                id="yourmessage"
+                name="yourmessage"
+                rows="5"
+              ></textarea>
+            </div>
+          </form>
         </div>
-        <div class="youremail">
-          <label for="youremail"> Your email </label>
-          <input type="text" name="youremail" required />
-        </div>
-        <div class="yourmessage">
-          <label for="yourmessage"> Your message </label>
-          <textarea id="yourmessage" name="yourmessage" rows="5" ></textarea>
-        </div> </form>
         <button type="submit" id="contact-button">Send message</button>
-        <p class="copyright">
-          © Copyright 2022 Kirsi Jokela.
-        </p>
+        <p class="copyright">© Copyright 2022 Kirsi Jokela.</p>
         <button id="backToTop">
           <span class="material-icons"> arrow_upward </span>
         </button>
