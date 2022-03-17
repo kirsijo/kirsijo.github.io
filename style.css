@@ -25,11 +25,9 @@ body {
 
 /* LINKS */
 
-a {
-  text-decoration: none;
-}
-
+a,
 a:visited {
+  text-decoration: none;
   color: var(--list-link-color);
 }
 
