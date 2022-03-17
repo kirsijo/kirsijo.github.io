@@ -323,6 +323,10 @@ input {
   padding: 5px;
 }
 
+#unsplash-link {
+  color: #f5e0cc;
+}
+
 button {
   background-color: #f5e0cc;
   font-family: var(--main-font);
